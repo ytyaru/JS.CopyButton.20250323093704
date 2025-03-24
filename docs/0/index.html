@@ -15,10 +15,21 @@
 <script src="../lib/util/type.js"></script>
 <script src="../lib/util/test/assertion.js"></script>
 <script src="../lib/util/event/clipboard.js"></script>
+<script src="js/copy-button.js"></script>
 <script src="js/main.js"></script>
 </head>
 <body>
-    <main></main>
+    <main>
+        <copy-button></copy-button>
+        <copy-button value="Some value."></copy-button>
+        <copy-button for="textarea[name='data']"></copy-button>
+        <textarea name="data">This is a pen.</textarea>
+        <copy-button name="copy-button-0">MyButton</copy-button>
+        <copy-button for="span[contenteditable]"></copy-button>
+        <span contenteditable>中身</span>
+    </main>
+
+
     <footer></footer>
 </body>
 </html>
